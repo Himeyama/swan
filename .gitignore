@@ -1,0 +1,6 @@
+__pycache__/
+*.ipynb
+swan-service/
+build/
+dist/
+install.exe

@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "swan"
+version = "24.11.2"
+description = ""
+authors = ["ひかり"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<3.14,>=3.8"
+pandas-datareader = "^0.10.0"
+fastapi = "^0.115.4"
+uvicorn = "^0.32.0"
+
+[tool.poetry.scripts]
+server = "swan.__main__:main"
+build = "swan.build:main"
+installer = "swan.installer:main"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.11.0"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
